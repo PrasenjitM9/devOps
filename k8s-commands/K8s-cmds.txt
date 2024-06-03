@@ -1,0 +1,56 @@
+kubectl cluster-info
+
+kubectl version
+
+kubectl get all -all-namespaces
+
+Damonsets:
+kubectl get daemonset
+
+kubectl create daemonset daemonset_name
+
+kubectl describe ds daemonset_name -n namespace_name
+
+Deployments:
+kubectl get deployment
+
+kubectl describe deployment deployment_name
+
+kubectl edit deployment deployment_name
+
+kubectl create deployment deployment_name
+
+kubectl delete deployment deployment_name
+
+kubectl rollout status deployment deployment_name
+
+Events:
+kubectl get events
+kubect get events --field-selector type=warning
+
+logs:
+kubectl logs pod_name -n namespace_name
+kubectl logs --since=1h pod_name
+kubectl logs --tail=20 pod_name -n namespace_name
+
+kubectl logs -f pod_name
+
+kubectl logs -c container_name pod_name
+
+kubectl logs pod_name pod.log
+
+kubectl logs --previous pod_name
+
+kubetail pod_prefix
+
+kubetail pod_prefix -s 5m
+
+Manifest Files:
+
+kubectl apply -f manifest_file.yaml
+
+kubectl create -f manifest_file.yaml
+kubectl create -f ./dir
+
+
+
