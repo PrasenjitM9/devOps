@@ -1,0 +1,7 @@
+Monitoring Usage Commands:-
+
+Get node cpu and memory utilization:
+$ kubectl top node <node_name>
+
+Get pod cpu and memory utilization:
+$ kubectl top pods <pod_name>
